@@ -21,7 +21,7 @@ public class CyclicBarrierTest {
 			System.out.println("BarrierAction 1 executed ");
 		});
 
-		CyclicBarrier barrier2 = new CyclicBarrier(2, () -> {
+		final CyclicBarrier barrier2 = new CyclicBarrier(2, () -> {
 			System.out.println("BarrierAction 2 executed ");
 		});
 
