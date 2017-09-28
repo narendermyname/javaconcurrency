@@ -10,5 +10,5 @@ import java.util.concurrent.TimeUnit;
  *
  */
 public class ThreadPool{
-	public static final ThreadPoolExecutor POOL = new ThreadPoolExecutor(4, 4, 60, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
+	public static final ThreadPoolExecutor POOL = new ThreadPoolExecutor(4, 10, 60, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
 }
